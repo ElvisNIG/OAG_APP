@@ -51,30 +51,30 @@
                     <P> </P>
                     <div class="card card border-secondary rounded border border-3">
                         <div class="card-body">                      
-                                  <form action="results.html" method="POST">
+                                  <form action="results.html" method="POST"  onsubmit="return false">
                                     <div class="form-group">
                                       <label class="now1" for="exampleInputEmail1">First Name:</label>
-                                      <input type="text" class="form-control" id="infoFName" aria-describedby="emailHelp" placeholder="Enter First Name"  required>
+                                      <input type="text" class="form-control" name="infoFName" id="infoFName" aria-describedby="emailHelp" placeholder="Enter First Name"  required>
                                     </div>
                                     <P> </P>
                                     <div class="form-group">
                                         <label class="now1" for="exampleInputEmail1">Last Name:</label>
-                                        <input type="text" class="form-control" id="infoLName" aria-describedby="emailHelp" placeholder="Enter Last Name"  required>
+                                        <input type="text" class="form-control" name="infoLName" id="infoLName" aria-describedby="emailHelp" placeholder="Enter Last Name"  required>
                                     </div>
                                     <P> </P>
                                     <div class="form-group">
                                         <label class="now1" for="exampleInputEmail1">Middle Name:</label>
-                                        <input type="text" class="form-control" id="infoMName" aria-describedby="emailHelp" placeholder="Enter Middle Name"  required>
+                                        <input type="text" class="form-control" name="infoMName" id="infoMName" aria-describedby="emailHelp" placeholder="Enter Middle Name"  required>
                                     </div>
                                     <P> </P>
                                     <div class="form-group">
                                         <label class="now1" for="exampleInputEmail1">Major:</label>
-                                        <input type="text" class="form-control" id="infoMajor" aria-describedby="emailHelp" placeholder="Enter  Major"  required>
+                                        <input type="text" class="form-control" name="infoMajor" id="infoMajor" aria-describedby="emailHelp" placeholder="Enter  Major"  required>
                                     </div>
                                     <P> </P>
                                     <div class="form-group">
                                       <label class="now1" for="exampleInputEmail1">Personal Email:</label>
-                                      <input type="text" class="form-control" id="infoEmail" aria-describedby="emailHelp" placeholder="Enter Personal Email Address"  required>
+                                      <input type="email" class="form-control" name="infoEmail" id="infoEmail" aria-describedby="emailHelp" placeholder="Enter Personal Email Address"  required>
                                   </div>
                                   <P> </P>
                                   <div>
@@ -100,7 +100,9 @@
                     </div>
                     </div>
                     <P> </P>
-                    <button class="next" id="next" href="finanace.html">Next</button>
+                    <a href="admissions.html">
+                      <button class="next" id="next" href="finanace.html">Next</button>
+                    </a>
                     <P> </P>
                   </div>
             </div>

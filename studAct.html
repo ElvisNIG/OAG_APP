@@ -44,6 +44,8 @@
         <section id="studActStage">
         <div class="container">
           <P> <br> <br> <br> </P>
+          <h1 style="color: 103908; font-family:Inter; font-size: 30px;"  >STEP VI: STUDENT ACTIVITIES</h1>
+          <P> </P>
                 <div class="row">
                   <div class="col-md-4">
                     <div class="thumbnail">
@@ -72,7 +74,7 @@
                 <p> </p>
                 <h1 style="color: black; font-family:Inter; font-size: 30px; text-align: left;"  >Below Are Student Activities Which You Can Select From</h1>
                 <P> </P>
-                <form action="results.html" method="POST">
+                <form action="results.html" method="POST" onsubmit="return false">
                     <label class="now1" for="faithB">Faith Based Organizations:</label>
                     <p> </p>
                 <select name="faithB" id="faithB" style="background-color: FAF3F5;" required>
@@ -85,7 +87,7 @@
                 <p> </p>
                 <label class="now1" for="academic">Academic Interest Bsed Associations:</label>
                 <p> </p>
-                <select name="academic" id="academic" style="background-color: FAF3F5;" required>
+                <select name="academicG" id="academic" style="background-color: FAF3F5;" required>
                     <option value=" Law Students Society">Law Students Society </option>
                     <option value="Institute of Electrical Electronics Engineers">Institute of Electrical Electronics Engineers</option>
                     <option value="AUN Chemical Society">AUN Chemical Society</option>
@@ -99,7 +101,7 @@
                 <p> </p>
                 <label class="now1" for="sports">Sports Club:</label>
                 <p> </p>
-                <select name="sports" id="sports" style="background-color: FAF3F5;" required>
+                <select name="sportsG" id="sports" style="background-color: FAF3F5;" required>
                     <option value="Aun Intramural Football League">Aun Intramural Football League</option>
                     <option value="Badminton Club">Badminton Club</option>
                     <option value="Tennis Club">Tennis Club</option>
@@ -113,7 +115,7 @@
                 <p> </p>
                 <label class="now1" for="Hobbies">Hobbies Pssion and Interests:</label>
                 <p> </p>
-                <select name="hobbies" id="hobbies" style="background-color: FAF3F5;" required>
+                <select name="hobbiesG" id="hobbies" style="background-color: FAF3F5;" required>
                     <option value="Art Club">Art Club</option>
                     <option value="Theater Club">Theater Club</option>
                     <option value="AUN Dance Troupe">AUN Dance Troupe</option>
@@ -126,7 +128,7 @@
                 <p> </p>
                 <label class="now1" for="Governance">Governance Leadership Boards and Councils:</label>
                 <p> </p>
-                <select name="Governance" id="Governance" style="background-color: FAF3F5;" required>
+                <select name="governanceG" id="Governance" style="background-color: FAF3F5;" required>
                     <option value="Women's Leadership Council">Women's Leadership Council</option>
                     <option value="AUN Honor Society">AUN Honor Society</option>
                     <option value="Campus Activities Board">Campus Activities Board</option>
@@ -160,12 +162,35 @@
                   </tbody>
                 </table>
               </div>
-              <button class="previous" id="previous" href="housing.html">Previous</button>
-              <button class="next" id="next" href="">Next</button>
-              <P> </P>     
+              <a>
+                <button class="previous" id="previous" disabled>Previous</button>
+              </a>
+              <a href="congrats.html">
+                <button class="next" id="nextst">Next</button>
+              </a>
+              <P> </P>
+              <label for="accept">
+                <input type="checkbox" id="accept1" onclick="myFunc()">
+             </label>    
         </div>
         </section>
       </div>
+      <script>
+        var nextstt = document.getElementById("nextst");
+        nextstt.disabled = true;
+        var stRadio = document.getElementById("studActOverall");
+        function myFunc() {
+        var checkBox = document.getElementById("accept1");
+        if (checkBox.checked == true){
+          stRadio.checked = true;
+          nextst.disabled = false;
+        } else {
+          stRadio.checked = false;
+          nextst.disabled = true;
+
+        }
+        }
+      </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
         

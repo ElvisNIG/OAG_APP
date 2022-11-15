@@ -40,14 +40,13 @@
             </div>
           </div>
         </nav>
-      </div>
         <section id = "Guide">
             <div class="container">
               <P> <br> <br> <br> </P>
                 <h1 style="color: black; font-family:Inter; font-size: 25px;"  >Hi, Moyo Ajala,  Start Your Orientation Now</h1>
                 <P> </P>
                 <h1 style="color: 103908; font-family:Inter; font-size: 30px;"  >STEP I: ADMISSIONS</h1>
-                <form action="results.html" method="POST">
+                <form action="" method="" onsubmit="return false">
                     <div class="table-responsive">
                         <table class="table table-hover">
                           <thead>
@@ -85,7 +84,7 @@
                                 <td>4</td>
                                 <td>Submit Your Transcript (University/High School/Transfer)</td>
                                 <td> 
-                                    <input type="file" id="tscriptFile">
+                                    <input type="file" name id="tscriptFile">
                             
                                 </td>
                                 <td>
@@ -128,7 +127,7 @@
                           </tbody>
                         </table>
                         <P> </P>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" onclick="valid()">Submit</button>
 
 
                       </div>
@@ -156,17 +155,67 @@
                   </tbody>
                 </table>
               </div>
-              <div class="invisible">
-              <button class="previous" id="previous">Previous</button>
+              <button class="previous" id="previousa" disabled>Previous</button>
               <a href="finance.html">
                 <button class="next" id="nexta">Next</button>
               </a>
               <P> </P>
-              </div>
-            </div>
+              <label for="accept">
+                <input type="checkbox" id="accept12" onclick="myFunc()")> 
+             </label>
         </section>
       </div>
-      <script src="home.js"></script>
+      <script>
+        var acc = document.getElementById("jambCheck"); 
+        acc.checked = fasle;
+        function valid(){
+          var vef = document.getElementById("jambFile");
+          if(document.getElementById("jambFile").value != ""){
+            jambCheck.checked = true;
+          }else{
+            jambCheck.checked = false;
+          }if(document.getElementById("waecFile").value != ""){
+            waecCheck.checked = true;
+          }else{
+            waecCheck.checked = false;
+          } if(document.getElementById("tscriptFile").value != ""){
+            tscriptCheck.checked = true;
+          }else{
+            tscriptCheck.checked = false;
+          }if(document.getElementById("rletterFile").value != ""){
+            rletterCheck.checked = true;
+          }else{
+            rletterCheck.checked = false;
+          }if(document.getElementById("idFile").value != ""){
+            idCheck.checked = true;
+          }else{
+            idCheck.checked = false;
+          }if(document.getElementById("pEssayFile").value != ""){
+            essayCheck.checked = true;
+          }else{
+            essayCheck.checked = false;
+          }
+        }
+      </script>
+      <script>
+        var nextaa = document.getElementById("nexta");
+        nextaa.disabled = true;
+        var aRadio = document.getElementById("admissionOverall");
+        aRadio.checked = false;
+        function myFunc() {
+        var checkBox = document.getElementById("accept12");
+        if (checkBox.checked == true){
+          aRadio.checked = true;
+          nextaa.disabled = false;
+        } else {
+          aRadio.checked = false;
+          nextaa.disabled = true;
+
+        }
+  }
+      </script>
+       
+      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
              

@@ -46,35 +46,35 @@
         <div class="container">
           <P> <br> <br> <br> </P>
             <h1 style="color: 103908; font-family:Inter; font-size: 30px;"  >STEP IV: HOUSING & ID </h1>
-            <form action="results.html" method="POST">
+            <form action="results.html" method="POST"  onsubmit="return false">
                 <div class="form-group">
                   <label class="now1" for="exampleInputEmail1">First Name:</label>
-                  <input type="text" class="form-control" id="hfName" aria-describedby="emailHelp" placeholder="Enter First Name" style="background-color: FAF3F5;" required>
+                  <input type="text" class="form-control" name="hfName" id="hFName" aria-describedby="emailHelp" placeholder="Enter First Name" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label class="now1" for="exampleInputEmail1">Last Name:</label>
-                    <input type="text" class="form-control" id="hlName" aria-describedby="emailHelp" placeholder="Enter Last Name" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="hlName" name="hLName" aria-describedby="emailHelp" placeholder="Enter Last Name" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label  class="now1"for="exampleInputEmail1">Middle Name:</label>
-                    <input type="text" class="form-control" id="hmName" aria-describedby="emailHelp" placeholder="Enter Middle Name" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="hmName" name="hMName" aria-describedby="emailHelp" placeholder="Enter Middle Name" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label class="now1" for="exampleInputEmail1">Phone Number:</label>
-                    <input type="number" class="form-control" id="hPhoneNumber" aria-describedby="emailHelp" placeholder="Enter Phone Number" style="background-color: FAF3F5;" required>
+                    <input type="number" class="form-control" name="hPhoneNumber" id="hPhoneNumber" aria-describedby="emailHelp" placeholder="Enter Phone Number" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label class="now1" for="exampleInputEmail1">Major:</label>
-                    <input type="text" class="form-control" id="hMajor" aria-describedby="emailHelp" placeholder="Enter Major" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="hMajor" name="hMajor" aria-describedby="emailHelp" placeholder="Enter Major" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label class="now1" for="exampleInputEmail1">Email:</label>
-                    <input type="email" class="form-control" id="hEmail" aria-describedby="emailHelp" placeholder="Enter Email Address" style="background-color: FAF3F5;" required>
+                    <input type="email" class="form-control" id="hEmail" name="hEmail" aria-describedby="emailHelp" placeholder="Enter Email Address" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div>
@@ -127,13 +127,44 @@
                   </tbody>
                 </table>
               </div>
-              <button class="previous" id="previous" href="housing.html">Previous</button>
-              <button class="next" id="next" href="finanace.html">Next</button>
-              
+              <a>
+                <button class="previous" id="previoushs" disabled>Previous</button>
+              </a>
+              <a href="health.html">
+                <button class="next" id="nexths">Next</button>
+              </a>
               <P> </P>
+              <label for="accept">
+                <input type="checkbox" id="accept1" onclick="myFunc()">
+             </label>
         </div>
     </section>
       </div>
+      <script>
+        var nexthss = document.getElementById("nexths");
+        nexthss.disabled = true;
+        var hsRadio = document.getElementById("housingOverall");
+        function myFunc() {
+        var checkBox = document.getElementById("accept1");
+        if (checkBox.checked == true){
+          hsRadio.checked = true;
+          nexths.disabled = false;
+        } else {
+          hsRadio.checked = false;
+          nexths.disabled = true;
+
+        }
+  }
+      </script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('input[type="radio"]').click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+          });
+        });
+      </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
   </body>

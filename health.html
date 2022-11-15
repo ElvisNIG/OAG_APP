@@ -46,10 +46,10 @@
               <P> <br> <br> <br> </P>
                 <h1 style="color: 103908; font-family:Inter; font-size: 30px;"  >STEP V: HEALTH DESK</h1>
                 <P> </P>
-                <form action="results.html" method="POST">
+                <form action="results.html" method="POST"  onsubmit="return false">
                   <div class="form-group">
                     <label  class="now1" for="exampleInputEmail1">ID Number:</label>
-                    <input type="text" class="form-control" id="healthIdNo" aria-describedby="emailHelp" placeholder="Enter ID Number" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" name="healthIdNo" id="healthIdNo" aria-describedby="emailHelp" placeholder="Enter ID Number" style="background-color: FAF3F5;" required>
                   </div>
                   <P> </P>
                   <div>
@@ -67,28 +67,29 @@
                   </div>
                   <P> </P>
                   <div class="form-group">
-                      <label  class="now1"  type="text" class="form-control" id="nationality" aria-describedby="emailHelp" placeholder="Enter Nationality" style="background-color: FAF3F5;" required>
+                    <label  class="now1" for="nationality">Nationality: </label>
+                      <input type="text" class="form-control" name="nationality" id="nationality" aria-describedby="emailHelp" placeholder="Enter Nationality" style="background-color: FAF3F5;" required>
                   </div>
                   <P> </P>
                   <div class="form-group">
                       <label  class="now1" for="exampleInputEmail1">House Address:</label>
-                      <input type="text" class="form-control" id="houseAddress" aria-describedby="emailHelp" placeholder="Enter House Address" style="background-color: FAF3F5;" required>
+                      <input type="text" class="form-control" name="houseAddress" id="houseAddress" aria-describedby="emailHelp" placeholder="Enter House Address" style="background-color: FAF3F5;" required>
                   </div>
                   <P> </P>
                   <div class="form-group">
                       <label  class="now1" for="exampleInputEmail1">Email:</label>
-                      <input type="email" class="form-control" id="healthEmail" aria-describedby="emailHelp" placeholder="Enter Email Adress" style="background-color: FAF3F5;" required>
+                      <input type="email" class="form-control" name="healthEmail" id="healthEmail" aria-describedby="emailHelp" placeholder="Enter Email Adress" style="background-color: FAF3F5;" required>
                   </div>
                   <P> </P>
                   <div class="form-group">
                     <label  class="now1" for="exampleInputEmail1">Mobile No:</label>
-                    <input type="number" class="form-control" id="mobileNo" aria-describedby="emailHelp" placeholder="Enter Mobile Number" style="background-color: FAF3F5;" required>
+                    <input type="number" class="form-control" id="mobileNo" aria-describedby="emailHelp" name="mobileNo" placeholder="Enter Mobile Number" style="background-color: FAF3F5;" required>
                 </div>
                   <P> </P>
                   <div>
                     <label  class="now1" for="marital-status">Marital Status:</label>
                     <P> </P>
-                    <select name="marital-status" id="marital-status" style="background-color: FAF3F5;" required>
+                    <select name="maritalstatus" id="marital-status" style="background-color: FAF3F5;" required>
                         <option value="Single">Single</option>
                         <option value="Married">Married</option>
                         <option value="Divorced">Divorced</option>
@@ -98,7 +99,7 @@
                   <div>
                     <label  class="now1" for="blood-group">Blood Group:</label>
                     <P> </P>
-                    <select name="blood-group" id="blood-group" style="background-color: FAF3F5;" required>
+                    <select name="bloodgroup" id="blood-group" style="background-color: FAF3F5;" required>
                         <option value="A+">A+</option><option value="A-">A-</option>
                         <option value="B+">B+</option><option value="B-">B-</option>
                         <option value="O+">O+</option><option value="O-">O-</option>
@@ -119,12 +120,12 @@
                   <P> </P>
                 <div class="form-group">
                     <label  class="now1" for="medicalCondition">Medical Condition:</label>
-                    <input type="text" class="form-control" id="medicalCondition" aria-describedby="emailHelp" placeholder="Enter If Any" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="medicalCondition" name="medicalCondition" aria-describedby="emailHelp" placeholder="Enter If Any" style="background-color: FAF3F5;" required>
                 </div>
                 <p> </p>
                 <div class="form-group">
                     <label  class="now1" for="allergies">Allergies:</label>
-                    <input type="text" class="form-control" id="allergies" aria-describedby="emailHelp" placeholder="Enter Allergies If Any" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="allergies" name="allergies" aria-describedby="emailHelp" placeholder="Enter Allergies If Any" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                   <p> </p>
@@ -139,22 +140,22 @@
                   <P> </P>
                   <div class="form-group">
                     <label  class="now1" for="parentName">Name:</label>
-                    <input type="text" class="form-control" id="parentName" aria-describedby="emailHelp" placeholder="Enter Parent Name" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="parentName" name="parentName" aria-describedby="emailHelp" placeholder="Enter Parent Name" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label  class="now1" for="parentRelationship">Relationship:</label>
-                    <input type="text" class="form-control" id="parentRelationship" aria-describedby="emailHelp" placeholder="Enter Relationship" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="parentRelationship" name="parentRelationship" aria-describedby="emailHelp" placeholder="Enter Relationship" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label  class="now1" for="parentAddress">Address:</label>
-                    <input type="text" class="form-control" id="parentAddress" aria-describedby="emailHelp" placeholder="Enter Parent Address" style="background-color: FAF3F5;" required>
+                    <input type="text" class="form-control" id="parentAddress"  name="parentAddress" aria-describedby="emailHelp" placeholder="Enter Parent Address" style="background-color: FAF3F5;" required>
                 </div>
                 <P> </P>
                 <div class="form-group">
                     <label  class="now1" for="parentPhoneNo">Phone Number:</label>
-                    <input type="number" class="form-control" id="parentPhoneNo" aria-describedby="emailHelp" placeholder="Enter Parent Phone Number" style="background-color: FAF3F5;" required>
+                    <input type="number" class="form-control" id="parentPhoneNo" name="parentPhoneNo" aria-describedby="emailHelp" placeholder="Enter Parent Phone Number" style="background-color: FAF3F5;" required>
                 </div>
                 <P></P>
                 <P> </P>
@@ -178,19 +179,47 @@
                             <td>APPROVED</td>
                             <td>
                             <label for="radio1"></label>
-                            <input type="radio"  class="larger1" name="radios" id="radio1" />
+                            <input type="radio"  class="larger1" name="radios" id="healthOverall" />
                             </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <button class="previous" id="previous">Previous</button>
+                  <button class="previous" id="previoush" disabled>Previous</button>
                   <a href="studAct.html">
-                    <button class="next" id="next">Next</button>
+                    <button class="next" id="nexth">Next</button>
                   </a>
                   <P> </P>
+                  <label for="accept">
+                    <input type="checkbox" id="accept1" onclick="myFunc()">
+                 </label>
                 </div>
         </section>
       </div>
+      <script>
+        var nexthh = document.getElementById("nexth");
+        nexthh.disabled = true;
+        var hRadio = document.getElementById("healthOverall");
+        function myFunc() {
+        var checkBox = document.getElementById("accept1");
+        if (checkBox.checked == true){
+          hRadio.checked = true;
+          nexthh.disabled = false;
+        } else {
+          hRadio.checked = false;
+          nexthh.disabled = true;
+
+        }
+  }
+      </script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('input[type="radio"]').click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+          });
+        });
+      </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
