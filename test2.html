@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation App</title>
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+  <body>
+<div><input type="checkbox" id="application" value="application" name="application"/><label for="application"><span></span></label>
+</div>
+<div>
+    <div>Application Form</div>
+    <div>
+        <input id="filename1" type="text"/> 
+        <div class="fileUpload btn btn-primary">
+            <span>Add</span>
+            <input id="uploadBtn1" type="file" class="upload" name="browsefile" file-accept="pdf, doc, docx, jpg, jpeg, png"/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>                                                         
+</div>
+
+<div><input type="checkbox" id="application2" value="application2" name="application2"/><label for="application2"><span></span></label>
+</div>
+<div>
+    <div>Application Form2</div>
+    <div>
+        <input id="filename2" type="text"/> 
+        <div class="fileUpload btn btn-primary">
+            <span>Add</span>
+            <input id="uploadBtn2" type="file" class="upload" name="browsefile" file-accept="pdf, doc, docx, jpg, jpeg, png"/>
+        </div>
+    </div>                                                         
+</div>
+<script>
+    $(document).ready(function () {
+
+$("#uploadBtn1").on("change", function () {
+
+$("#application").attr('checked','checked');
+
+});
+$("#uploadBtn2").on("change", function () {
+
+$("#application2").attr('checked','checked');
+
+});
+});
+
+</script>
