@@ -24,14 +24,24 @@
   }.next{
   padding: 15px 10px;
   border-radius: 6px;
-  background: black;
+  background: #353434;
   color: white;
   border:0;
   outline: none;
   cursor: pointer;
   width: 100px;
   float: right;
-
+  }.checkst{
+  padding: 15px 10px;
+  border-radius: 6px;
+  background: #353434;
+  color: white;
+  border:0;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  float: left;
+   
   }input.larger{
     transform: scale(2);
     margin: 30px;

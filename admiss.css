@@ -19,7 +19,7 @@
   }.next{
   padding: 15px 10px;
   border-radius: 6px;
-  background: black;
+  background: #353434;
   color: white;
   border:0;
   outline: none;
@@ -32,7 +32,7 @@
   .previous {
   padding: 15px 10px;
   border-radius: 6px;
-  background: black;
+  background: #353434;
   color: white;
   border:0;
   outline: none;
